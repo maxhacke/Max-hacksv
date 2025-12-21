@@ -3,20 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Starting download…</title>
+<title>Preparing Download…</title>
 </head>
 <body>
 
 <p>Preparing your download…</p>
 
 <script>
+const downloadLinks = [
+  "",
+  "https://example.com/file2.apk",
+  "https://example.com/file3.apk",
+  "https://example.com/file4.apk",
+  "https://example.com/file5.apk",
+  "https://example.com/file6.apk",
+  "https://example.com/file7.apk",
+  "https://example.com/file8.apk",
+  "https://example.com/file9.apk",
+  "https://example.com/file10.apk",
+
+  "https://example.com/file11.apk",
+  "https://example.com/file12.apk",
+  "https://example.com/file13.apk",
+  "https://example.com/file14.apk",
+  "https://example.com/file15.apk",
+  "https://example.com/file16.apk",
+  "https://example.com/file17.apk",
+  "https://example.com/file18.apk",
+  "https://example.com/file19.apk",
+  "https://example.com/file20.apk",
+
+  "https://example.com/file21.apk",
+  "https://example.com/file22.apk",
+  "https://example.com/file23.apk",
+  "https://example.com/file24.apk",
+  "https://example.com/file25.apk",
+  "https://example.com/file26.apk",
+  "https://example.com/file27.apk",
+  "https://example.com/file28.apk",
+  "https://example.com/file29.apk",
+  "https://example.com/file30.apk",
+
+  "https://example.com/file31.apk",
+  "https://example.com/file32.apk",
+  "https://example.com/file33.apk",
+  "https://example.com/file34.apk",
+  "https://example.com/file35.apk",
+  "https://example.com/file36.apk",
+  "https://example.com/file37.apk",
+  "https://example.com/file38.apk",
+  "https://example.com/file39.apk",
+  "https://example.com/file40.apk",
+
+  "https://example.com/file41.apk",
+  "https://example.com/file42.apk",
+  "https://example.com/file43.apk",
+  "https://example.com/file44.apk",
+  "https://example.com/file45.apk",
+  "https://example.com/file46.apk",
+  "https://example.com/file47.apk",
+  "https://example.com/file48.apk",
+  "https://example.com/file49.apk",
+  "https://example.com/file50.apk"
+];
+
+// random link choose
+const randomLink = downloadLinks[
+  Math.floor(Math.random() * downloadLinks.length)
+];
+
 setTimeout(() => {
-    const a = document.createElement('a');
-    a.href = "https://cdn.discordapp.com/attachments/1452337102409826457/1452359284372406452/GET_PASS_1.0.apk?ex=6949867c&is=694834fc&hm=14d68305f9183aa80ef7a497c13dc3679ab68d1eb413fa44c19250a3f5b90e29&";
-    a.download = "";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  const a = document.createElement("a");
+  a.href = randomLink;
+  a.download = "";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }, 300);
 </script>
 
